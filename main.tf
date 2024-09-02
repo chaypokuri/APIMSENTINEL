@@ -40,9 +40,9 @@ resource "azurerm_api_management" "example" {
   publisher_name      = "My Company"
   publisher_email     = "company@terraform.io"
   sku_name = "Developer_1"
-  virtual_network_configuration {
-  subnet_id = azurerm_subnet.example.id
-  }
+  #virtual_network_configuration {
+  #subnet_id = azurerm_subnet.example.id
+  #}
 }
 
 
